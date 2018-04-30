@@ -16,6 +16,8 @@
 		E3713D762097CB4A00E70E85 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3713D752097CB4A00E70E85 /* ToDoItem.swift */; };
 		E3713D782097CE7A00E70E85 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3713D772097CE7A00E70E85 /* Location.swift */; };
 		E3713D7A2097CF4200E70E85 /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3713D792097CF4200E70E85 /* LocationTests.swift */; };
+		E3713D7C2097D23100E70E85 /* ItemManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3713D7B2097D23100E70E85 /* ItemManagerTests.swift */; };
+		E3713D7E2097D25300E70E85 /* ItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3713D7D2097D25300E70E85 /* ItemManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		E3713D752097CB4A00E70E85 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
 		E3713D772097CE7A00E70E85 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		E3713D792097CF4200E70E85 /* LocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
+		E3713D7B2097D23100E70E85 /* ItemManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemManagerTests.swift; sourceTree = "<group>"; };
+		E3713D7D2097D25300E70E85 /* ItemManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,14 +87,13 @@
 		E3713D522097BE4000E70E85 /* ToDoTDD */ = {
 			isa = PBXGroup;
 			children = (
+				E3713D7F2097D2E600E70E85 /* Model */,
 				E3713D532097BE4000E70E85 /* AppDelegate.swift */,
 				E3713D552097BE4000E70E85 /* ViewController.swift */,
 				E3713D572097BE4000E70E85 /* Main.storyboard */,
 				E3713D5A2097BE4100E70E85 /* Assets.xcassets */,
 				E3713D5C2097BE4100E70E85 /* LaunchScreen.storyboard */,
 				E3713D5F2097BE4100E70E85 /* Info.plist */,
-				E3713D752097CB4A00E70E85 /* ToDoItem.swift */,
-				E3713D772097CE7A00E70E85 /* Location.swift */,
 			);
 			path = ToDoTDD;
 			sourceTree = "<group>";
@@ -98,11 +101,22 @@
 		E3713D672097BE4200E70E85 /* ToDoTDDTests */ = {
 			isa = PBXGroup;
 			children = (
+				E3713D7B2097D23100E70E85 /* ItemManagerTests.swift */,
 				E3713D792097CF4200E70E85 /* LocationTests.swift */,
 				E3713D732097C8EB00E70E85 /* ToDoItemTests.swift */,
 				E3713D6A2097BE4200E70E85 /* Info.plist */,
 			);
 			path = ToDoTDDTests;
+			sourceTree = "<group>";
+		};
+		E3713D7F2097D2E600E70E85 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E3713D752097CB4A00E70E85 /* ToDoItem.swift */,
+				E3713D772097CE7A00E70E85 /* Location.swift */,
+				E3713D7D2097D25300E70E85 /* ItemManager.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3713D562097BE4000E70E85 /* ViewController.swift in Sources */,
+				E3713D7E2097D25300E70E85 /* ItemManager.swift in Sources */,
 				E3713D542097BE4000E70E85 /* AppDelegate.swift in Sources */,
 				E3713D782097CE7A00E70E85 /* Location.swift in Sources */,
 				E3713D762097CB4A00E70E85 /* ToDoItem.swift in Sources */,
@@ -217,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3713D7C2097D23100E70E85 /* ItemManagerTests.swift in Sources */,
 				E3713D7A2097CF4200E70E85 /* LocationTests.swift in Sources */,
 				E3713D742097C8EB00E70E85 /* ToDoItemTests.swift in Sources */,
 			);
