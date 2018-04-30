@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  ToDoTDD
-//
-//  Created by Jeremy Broutin on 4/30/18.
-//  Copyright © 2018 Jeremy Broutin. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
