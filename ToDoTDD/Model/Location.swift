@@ -9,3 +9,11 @@ struct Location {
     self.coordinates = coordinates
   }
 }
+
+extension Location: Equatable {
+  static func ==(lhs: Location, rhs: Location) -> Bool {
+    return lhs.name == rhs.name
+      && lhs.coordinates?.latitude == rhs.coordinates?.longitude
+      && lhs.coordinates?.longitude == rhs.coordinates?.longitude
+  }
+}
