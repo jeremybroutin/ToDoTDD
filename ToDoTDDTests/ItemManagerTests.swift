@@ -56,4 +56,18 @@ class ItemManagerTests: XCTestCase {
     let returnItem = sut.doneItem(at: 0)
     XCTAssertEqual(returnItem.title, item.title)
   }
+
+  func testRemoveAll_ResultsInCountsBeZero() {
+    sut.add(ToDoItem(title: "Foo"))
+    sut.add(ToDoItem(title: "Bar"))
+    sut.removeAll()
+    XCTAssertEqual(sut.toDoCount, 0)
+    XCTAssertEqual(sut.doneCount, 0)
+  }
+
+  func testAdd_WhenItemIsAlreadyAdded_DoesNotIncreaseCount() {
+    sut.add(ToDoItem(title: "Foo"))
+    sut.add(ToDoItem(title: "Foo"))
+    XCTAssertEqual(sut.toDoCount, 1)
+  }
 }
